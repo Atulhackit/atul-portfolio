@@ -1,0 +1,45 @@
+.aboutContainer{
+    height: 100vh;
+    width: auto;
+    position: relative;
+    //  &::before{
+    //     content: url("../../../assets/images/atulPic.jpg");    
+    //     color: red;
+    //     z-index: 10;
+    //     background-color: yellow;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100vh;
+    //     transform: scale(.3);
+    // }
+
+    .about{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 3em;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+
+        h2 .highlighted{
+
+            color: var(--secondary-color);
+        }
+
+        .downloadButton{
+            background-color: transparent;
+            border: 1px solid var(--secondary-color);
+            padding: 6px 8px;
+            font-size: var(--big-button);
+            font-weight: 600;
+            color: var(--accent-color);
+            cursor: pointer;
+            &:hover{
+                color:#fff;
+                background-color: var(--accent-color);
+            }
+        }
+    }
+}
